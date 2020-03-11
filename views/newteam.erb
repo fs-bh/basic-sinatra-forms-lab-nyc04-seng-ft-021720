@@ -3,8 +3,41 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
+  <style>
+      form label {
+          display: inline-block;
+          margin: 10px;
+          width: 40%;
+          text-align: right;
+      }
+      form input {
+          width: 40%;
+      }
+      form input[type="submit"]{
+          width: 100%;
+          height: 40px;
+          display: block;
+      }
+  </style>
  </head>
  <body>
+    <form method="POST" action="/team">
+        <label for="name">Team Name:</label>
+        <input type="text" name="name" id="name" />
+        <label for="coach">Coach:</label>
+        <input type="text" name="coach" id="coach" />
+        <label for="pg">Point Guard:</label>
+        <input type="text" name="pg" id="pg" />
+        <label for="sg">Shooting Guard:</label>
+        <input type="text" name="sg" id="sg" />
+        <label for="sf">Small Forward:</label>
+        <input type="text" name="sf" id="sf" />
+        <label for="pf">Power Forward:</label>
+        <input type="text" name="pf" id="pf" />
+        <label for="c">Center:</label>
+        <input type="text" name="c" id="c" />
+        <input type="submit" value="Submit" id="Submit" />
+    </form>
  </body>
 </html>
 
